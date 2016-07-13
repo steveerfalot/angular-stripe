@@ -1,8 +1,8 @@
 {
-  "name": "angular-stripe",
+  "name": "angular-stripe-release",
   "version": "4.2.12",
   "description": "Angular service provider for interacting with Stripe",
-  "main": "./src",
+  "main": "./release",
   "scripts": {
     "test": "standard && zuul --phantom -- test/*.js",
     "umd": "browserify -e . -s angularStripe -g [ exposify --expose [ --angular=angular ] ] -p derequire/plugin > ./release/angular-stripe.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/bendrucker/angular-stripe.git"
+    "url": "git://github.com/steveerfalot/angular-stripe.git"
   },
   "keywords": [
     "angular",
@@ -18,12 +18,8 @@
     "promise",
     "wrapper"
   ],
-  "author": "Ben Drucker <bvdrucker@gmail.com> (http://www.bendrucker.me)",
+  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/bendrucker/angular-stripe/issues"
-  },
-  "homepage": "https://github.com/bendrucker/angular-stripe",
   "devDependencies": {
     "angular": "~1.4.9",
     "angular-mocks": "~1.4.9",
@@ -46,12 +42,7 @@
     "stripe-as-promised": "~2.0.0"
   },
   "files": [
-    "src/*.js",
+    "release/*.js",
     "readme.md"
-  ],
-  "standard": {
-    "ignore": [
-      "release/"
-    ]
-  }
+  ]
 }
